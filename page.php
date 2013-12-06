@@ -30,7 +30,7 @@
 		<?php endforeach; ?>
 	</ul>
 
-	<p>All in all, this will give us <?php echo count($contrib);?> contributions to the potluck.</p>
+	<p>All in all, this will give us <?php echo count($contrib);?> contributors to the potluck.</p>
 
 
 	
