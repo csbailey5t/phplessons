@@ -21,8 +21,12 @@
 			"Francesca" => "big, tasty salad.",
 			"Ronda" => "baked dessert.");
 
+		if (array_key_exists($name, $contrib)) {
+			echo $name." is bringing ".$contrib["$name"];
+		};
+
 		
-		if ($name == "Scott") {
+		/* if ($name == "Scott") {
 		echo $name." is bringing ".$contrib["$name"];
 		};
 
@@ -54,20 +58,11 @@
 		if ($name == "Ronda") {
 		echo $name." is bringing ".$contrib["$name"];
 		};
-		
+
+		*/	
 	
 		
 	?>
-
-
-	
-
-	
-
-	
-
-
-
 	
 </body>
 </html>
