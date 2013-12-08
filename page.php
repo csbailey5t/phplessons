@@ -21,7 +21,7 @@
 
 	<?php 
 
-		echo _GET["name"] . "will bring" . $contrib(_GET["name"]);
+		echo _GET['name'] . "will bring" . $contrib(_GET['name']);
 
 	?>	
 	
