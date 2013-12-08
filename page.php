@@ -8,22 +8,15 @@
 
 	
 	<?php 
-		$contrib = array(
-			"Scott" => "spicy cream corn",
-			"Jeremy" => "smoked pork shoulder or chicken soup",
-			"Bethany" => "wine and cheese",
-			"Eric" => "mac and cheese",
-			"Veronica" => "stuffed squash and bbq pulled chicken",
-			"Steph" => "spinach pie",
-			"Francesca" => "big, tasty salad",
-			"Ronda" => "baked dessert",);
+		
+		$name = $_GET['name'];
+
+		
+	
+		echo $name;
 	?>
 
-	<?php 
 
-		echo _GET['name'] . "will bring" . $contrib(_GET['name']);
-
-	?>	
 	
 
 	
