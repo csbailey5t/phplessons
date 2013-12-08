@@ -6,8 +6,7 @@
 </head>
 <body>
 
-	<h1>Foods for the Praxis Potluck</h1>
-
+	
 	<?php 
 		$contrib = array(
 			"Scott" => "spicy cream corn",
@@ -20,17 +19,17 @@
 			"Ronda" => "baked dessert",);
 	?>
 
-	<p>Here is what each person has committed to bring:</p>
+	<?php 
 
-	<ul>
-		<?php foreach ($contrib as $name => $food): ?>
-			
-			<li><?php echo "$name will bring $food."; ?>
-		
-		<?php endforeach; ?>
-	</ul>
+		echo _GET["name"] . "will bring" . $contrib(_GET["name"]);
 
-	<p>All in all, this will give us <?php echo count($contrib);?> contributors to the potluck.</p>
+	?>	
+	
+
+	
+
+	
+
 
 
 	
