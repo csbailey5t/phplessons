@@ -8,7 +8,7 @@
 
 	<?php
 
-		$year = 2035;
+		$year = 1800;
 
 		if ($year < 1900) {
 			echo "Welcome wonderful visitor from the past!";
