@@ -12,9 +12,10 @@
 
 
 
-function years($secs)
+function years($seconds)
 {
-	return $secs / 31536000;
+	$seconds_in_a_year = 31536000;
+	return $seconds / $seconds_in_a_year;
 }
 
 
