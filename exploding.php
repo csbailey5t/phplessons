@@ -15,10 +15,13 @@
         $string = "Here is my string!";
 
         $words = explode(" ", $string);
-
-        print_r($words);
     ?>
 
+    <p><?php echo "$string" ?></p>
+    
+    <p><?php print_r($words); ?></p>    
+
+    <p><?php var_dump($words); ?></p>        
 
 </body>
 </html>
