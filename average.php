@@ -8,13 +8,16 @@
 	<?php
 
 	/* Wayne suggested using a foreach loop with running sum, but here is a way without that */
-        
-        $numbers = array(1, 2, 3, 4, 5);
 
-        $sum = array_sum($numbers);
-        $count = count($numbers);
-        $average = $sum / $count;
-        echo $average;
+    function average($numbers){
+    	return array_sum($numbers) / count($numbers);
+    }    
+        
+    $numbers = array(1, 2, 3, 4, 5);
+
+    $average = average($numbers);
+
+    echo "$average is the average of the array;"
 
     ?>
 </body>
