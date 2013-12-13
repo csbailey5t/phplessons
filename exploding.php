@@ -16,12 +16,7 @@
 
         $words = explode(" ", $string);
 
-        echo $words[0];
-
         print_r($words);
-
-
-
     ?>
 
 
