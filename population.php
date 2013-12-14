@@ -16,8 +16,8 @@
     	}
     }
 
-    echo "The population after 10 years is ".population(3)."<br />";
-    echo "The population after 20 years is ".population(4)."<br />";
+    echo "The population after 10 years is ".population(10)."<br />";
+    echo "The population after 20 years is ".population(20)."<br />";
     echo "The population after 100 years is ".population(37);
 
     ?>
