@@ -58,7 +58,7 @@
 
     <h3>Report: Student 1</h3>
     <ul>
-    	<li>Exams: 89, 90, 90</li>
+    	<li>Exams: <?php echo "$grades_one[0], $grades_one[1], $grades_one[2]"; ?></li>
     	<li>Average: <?php echo $average_one; ?></li>
     	<li>Grade: <?php echo $letter_grade_one; ?></li>
     	<li><?php pass_or_fail($letter_grade_one); ?></li>
@@ -66,7 +66,7 @@
 
     <h3>Report: Student 2</h3>
     <ul>
-    	<li>Exams: 50, 51, 0</li>
+    	<li>Exams: <?php echo "$grades_two[0], $grades_two[1], $grades_two[2]"; ?></li>
     	<li>Average: <?php echo $average_two; ?></li>
     	<li>Grade: <?php echo $letter_grade_two; ?></li>
     	<li><?php pass_or_fail($letter_grade_two); ?></li>
