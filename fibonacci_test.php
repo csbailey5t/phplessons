@@ -8,20 +8,16 @@
 	
 	<?php
 
-	function fibonacci($n){
-		if ($n == 0) {
-			return 0;
-		} elseif ($n == 1) {
-			return 10;
-		} elseif ($n == 2) {
-			return 20;
-		}else {
-			return fibonacci($n-1) + fibonacci($n-2);
-		}
+	
+	$fibarray = array(0, 1);
+	for ($i=2; $i < 4000000, $i++) { 
+		$fibarray[$i] = $fibarray[$i-1] + $fibarray[$i-2];
 	}
 
-	echo fibonacci(5);
 
-	?>
+
+
+
+?>
 </body>
 </html>
