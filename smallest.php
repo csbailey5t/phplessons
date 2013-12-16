@@ -7,6 +7,7 @@
 <body>
 
 	<?php function smallest_number($x, $y){
+		$result = "There is no result!";
 		if ($x < $y){
 			$result = $x;
 		} elseif ($y < $x){
