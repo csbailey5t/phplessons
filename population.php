@@ -6,13 +6,24 @@
 </head>
 <body>
 	<?php 
+
+    error_reporting(E_ALL);
+
+    $fib_array = [];
+
     function population($year){
+        global $fib_array;
+        if (array_key_exists($year, $fib_array)){
+            return $fib_array[$year];
+        }
     	if ($year == 1) {
     		return 10;
     	} elseif ($year == 2) {
     		return 20;
     	} else {
-    		return population($year-1) + population($year-2);
+    		$fib_value = population($year-1) + population($year-2);
+            $fib_array[$year] = $fib_value;
+            return $fib_value;
     	}
     }
 
