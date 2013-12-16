@@ -10,7 +10,8 @@
 	<?php
 
 		function string_length($string) {
-			return strlen($string);
+			$length = strlen($string);
+			return $length;
 		}
 
 		
