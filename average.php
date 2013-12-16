@@ -11,9 +11,9 @@
 	<?php
 
     function average($numbers){
-    	return array_sum($numbers) / count($numbers);
-    }    
-        
+    	$average = array_sum($numbers) / count($numbers);
+       return $average; 
+    }      
     $numbers = array(1, 2, 3, 4, 5);
 
     $average = average($numbers);
@@ -31,7 +31,8 @@
     	foreach ($numbers as $number) {
     		$sum += $number;
     	};
-    	return $sum / count($numbers);
+    	$average = $sum / count($numbers);
+        return $average;
     	}
     
     $numbers = array(1, 2, 3, 4, 5);
