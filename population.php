@@ -7,8 +7,6 @@
 <body>
 	<?php 
 
-    error_reporting(E_ALL);
-
     $fib_array = [];
 
     function population($year){
