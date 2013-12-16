@@ -9,7 +9,8 @@
 	<?php
     
     function reverse_string($string) {
-    	return strrev($string);
+    	$reversed_string = strrev($string);
+        return $reversed_string;
     } 
 
     $string = "Here is my String!";
