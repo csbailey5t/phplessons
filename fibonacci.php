@@ -37,9 +37,19 @@
                 $fib_array[$n] = $fib_value;
                 return $fib_value;
         	}
-    }
+        }
 
-    echo fibonacci(100);
+        
+    
+        foreach ($fib_array as $fib_value) {
+            $sum = 0;
+            if ($fib_value <= 4000000 && $fib_value % 2 == 0) {
+                $sum = $sum + $fib_value;
+            }
+        }
+
+
+   
 
     ?>
 </body>
