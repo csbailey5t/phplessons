@@ -9,12 +9,14 @@
     <?php 
 
         function explode_string($string){
-        	return explode(" ", $string);
+            $words = explode(" ", $string);
+        	return $words;
         }
 
         $string = "Here is my string!";
 
-        $words = explode(" ", $string);
+        $words = explode_string($string);
+
     ?>
 
     <p><?php echo "$string" ?></p>
