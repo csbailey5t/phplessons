@@ -10,10 +10,10 @@
         function division($x, $y)
         {
             if ($y == 0) {
-             	return $y / $x;
+             	$result = $y / $x;
              } else {
-             	return $x / $y;
-             }
+             	$result = $x / $y;
+             } return $result;
             
         }
 
@@ -27,10 +27,31 @@
         	$result = division($x, $y);
         	echo "$result <br>";
         }
-        
-
-       
-
 	?>
+
+    <p>I interpreted the problem differently. On Wayne's interpretation:</p>
+    <?php 
+
+    function divide ($a, $b){
+        if ($b == 0){
+            $b = $a;
+        } return $a / $b;
+    }
+
+     $numbers = array(
+            4 => 2,
+            2 => 4,
+            384 => 0,
+            900 => 32);
+
+     foreach ($numbers as $a => $b) {
+         $result = divide ($a, $b);
+         echo "$result <br>";
+     }
+
+     ?>
+
+
+
 </body>
 </html>
