@@ -9,7 +9,8 @@
 	<?php
 	function multiply($x, $y)
 		{
-			return $x * $y;
+			$result = $x * $y;
+			return $result;
 		}
 
 	$integers = array(
