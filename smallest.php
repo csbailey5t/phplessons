@@ -8,12 +8,12 @@
 
 	<?php function smallest_number($x, $y){
 		if ($x < $y){
-			return $x;
+			$result = $x;
 		} elseif ($y < $x){
-            return $y;
+			$result = $y;
 		} else {
-			return "$x and $y are the same";
-		}
+			$result = "$x and $y are the same";
+		} return $result;
 	}
 	?>
 
