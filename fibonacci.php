@@ -33,11 +33,13 @@
         	} elseif ($n == 2) {
         		return 2;
         	} else {
-        		return fibonacci($n-1) + fibonacci($n-2);
+        		$fib_value = fibonacci($n-1) + fibonacci($n-2);
+                $fib_array[$n] = $fib_value;
+                return $fib_value;
         	}
     }
 
-    echo fibonacci(6);
+    echo fibonacci(100);
 
     ?>
 </body>
